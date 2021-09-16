@@ -1,8 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -54,5 +52,15 @@ final class Cat {
         return c1.breed.compareTo(c2.breed);
     }
 
+    public static int byName(Cat c1, Cat c2) {
+        return c1.name.compareTo(c2.name);
+    }
 
+    public static boolean byColor(Cat cat) {
+        return cat.color.equals(Color.TORTIE);
+    }
+
+    public static boolean byLength(Cat cat) {
+        return cat.name.length()>5;
+    }
 }
