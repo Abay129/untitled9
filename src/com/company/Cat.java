@@ -50,6 +50,9 @@ final class Cat {
         SPHINX, BRITAIN, SCOTTISH, VULGARIS, ORIENTAL
     }
 
-    // сортировка по возрасту
+    public static int byBreed(Cat c1, Cat c2) {
+        return c1.breed.compareTo(c2.breed);
+    }
+
 
 }
